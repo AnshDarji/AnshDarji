@@ -1,0 +1,37 @@
+name: Generate profile graphics
+on:
+  schedule:
+    - cron: '23 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: profile-graphics
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Generate all profile SVGs using the runner's Python
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/pixel_title.py "ANSH DARJI" -o assets/title.svg --split 1
+          python3 scripts/typing_line.py "Actively looking for SDE Summer 2027 internships" -o assets/tagline.svg
+          python3 scripts/regenerate_portrait.py
+          python3 scripts/section_header.py
+          python3 scripts/generate_stats.py
+      - name: Commit changed SVGs
+        run: |
+          git add -- assets/*.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh profile graphics"
+          git push
