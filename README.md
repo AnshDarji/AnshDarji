@@ -35,9 +35,9 @@
 ### Supporting projects
 
 - [Talent Intelligence System](https://github.com/ctrl-alt-elite1/eightfold_AI_hackathon) — GitHub-signal candidate ranking with a skill graph. *Python, NetworkX, Sentence Transformers*
-- Aegis — Voice AI incident commander.
-- MediKiosk — SIH 2026 project.
-- Amazon ML Challenge 2026 entry.
+- [Aegis](https://github.com/EcoSphere-2026-Hackathon/Aegis) — Voice AI incident commander.
+- [MediKiosk](https://github.com/SIH2k26/MediKiosk) — SIH 2026 project.
+- [Amazon ML Challenge 2026 entry](https://github.com/Team-AWWS/Amazon-ML-Challenge-2026-).
 
 <p align="left"><img src="assets/h-wins.svg" alt="achievements" width="100%"></p>
 
