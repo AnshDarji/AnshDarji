@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472 36" width="472" height="36" role="img" aria-label="Actively looking for SDE Summer 2027 internships">
+<style>
+.t{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;fill:#374151}
+.c{fill:#374151;animation:blink 1s steps(1) infinite}
+@media(prefers-color-scheme:dark){.t,.c{fill:#d1d5db}}
+@keyframes type{from{width:0}to{width:432px}}
+@keyframes blink{50%{opacity:0}}
+@keyframes move{from{transform:translateX(0)}to{transform:translateX(432px)}}
+#m{animation:type 2.9s steps(48,end) .8s forwards;width:0}
+.c{animation:blink 1s steps(1) infinite,move 2.9s steps(48,end) .8s forwards}
+</style>
+<clipPath id="r"><rect id="m" x="20" y="0" height="36"/></clipPath>
+<text class="t" x="20" y="23.2" clip-path="url(#r)" xml:space="preserve" textLength="432.0" lengthAdjust="spacing">Actively looking for SDE Summer 2027 internships</text>
+<rect class="c" x="20" y="5.2" width="6.3" height="21.0"/>
+</svg>
