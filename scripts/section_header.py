@@ -8,10 +8,10 @@ HEADINGS = {'about': 'about', 'stack': 'technical stack', 'work': 'featured work
 
 def render(label):
     label = label.lower()
-    start = 12 + len(label) * 10 + 28
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="720" height="48" viewBox="0 0 720 48" role="img" aria-label="{escape(label)}">
-<style>text{{fill:#24292f;font:16px ui-monospace,Consolas,monospace}}line{{stroke:#d0d7de}}@media(prefers-color-scheme:dark){{text{{fill:#e6edf3}}line{{stroke:#30363d}}}}</style>
-<text x="12" y="30">{escape(label)}</text><line x1="{start}" y1="25" x2="708" y2="25" stroke-width="1"/>
+    start = len(label) * 14.5 + 24
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="720" height="36" viewBox="0 0 720 36" role="img" aria-label="{escape(label)}">
+<style>text{{fill:#24292f;font:600 24px ui-monospace,Consolas,monospace}}line{{stroke:#d0d7de}}@media(prefers-color-scheme:dark){{text{{fill:#e6edf3}}line{{stroke:#30363d}}}}</style>
+<text x="0" y="26">{escape(label)}</text><line x1="{start}" y1="19" x2="720" y2="19" stroke-width="1"/>
 </svg>'''
 
 if __name__ == '__main__':
