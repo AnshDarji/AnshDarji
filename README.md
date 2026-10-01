@@ -10,7 +10,7 @@
 </div>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/ansh14darji/">LinkedIn</a> · <a href="https://github.com/AnshDarji">GitHub</a> · <a href="https://leetcode.com/u/ANSH_9876/">LeetCode</a> · <a href="mailto:anshdarji1234@gmail.com">Email</a>
+  <a href="https://www.linkedin.com/in/ansh14darji/">LinkedIn</a> · <a href="https://leetcode.com/u/ANSH_9876/">LeetCode</a> · <a href="mailto:anshdarji1234@gmail.com">Email</a>
 </p>
 
 <p align="left"><img src="assets/h-about.svg" alt="about" width="100%"></p>
